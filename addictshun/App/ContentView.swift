@@ -9,22 +9,23 @@ import SwiftUI
 import FamilyControls
 
 struct ContentView: View {
-    let service = ScreenTimeService()
-    @State private var selectedActivity = FamilyActivitySelection()
+    private let screenTimeService = ScreenTimeService()
+    @State private var selectedActivities = AddictionReliefStore.load()
     
     var body: some View {
         VStack {
-            FamilyActivityPicker(selection: $selectedActivity)
+            FamilyActivityPicker(selection: $selectedActivities)
         }
         .task {
             do {
-                try await service.requestAuthorization()
+                try await screenTimeService.requestAuthorization()
             } catch {
                 print(error.localizedDescription)
             }
         }
-        .onChange(of: selectedActivity) {
-            service.applyShield(to: selectedActivity)
+        .onChange(of: selectedActivities) {
+            screenTimeService.applyShield(to: selectedActivities)
+            AddictionReliefStore.save(selectedActivities)
         }
     }
 }

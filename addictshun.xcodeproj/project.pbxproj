@@ -6,11 +6,62 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7714907A300A003200C0E2DD /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77149079300A003200C0E2DD /* ManagedSettings.framework */; };
+		7714907C300A003200C0E2DD /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7714907B300A003200C0E2DD /* ManagedSettingsUI.framework */; };
+		77149084300A003200C0E2DD /* ShunBlock.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 77149077300A003200C0E2DD /* ShunBlock.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77149082300A003200C0E2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77FCF3752D7360FF00E2C394 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77149076300A003200C0E2DD;
+			remoteInfo = ShunBlock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77149089300A003200C0E2DD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77149084300A003200C0E2DD /* ShunBlock.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		77149077300A003200C0E2DD /* ShunBlock.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShunBlock.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		77149079300A003200C0E2DD /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		7714907B300A003200C0E2DD /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
 		77FCF37D2D7360FF00E2C394 /* addictshun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = addictshun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		77149085300A003200C0E2DD /* Exceptions for "ShunBlock" folder in "ShunBlock" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 77149076300A003200C0E2DD /* ShunBlock */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7714907D300A003200C0E2DD /* ShunBlock */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				77149085300A003200C0E2DD /* Exceptions for "ShunBlock" folder in "ShunBlock" target */,
+			);
+			path = ShunBlock;
+			sourceTree = "<group>";
+		};
 		77FCF37F2D7360FF00E2C394 /* addictshun */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = addictshun;
@@ -19,6 +70,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		77149074300A003200C0E2DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7714907A300A003200C0E2DD /* ManagedSettings.framework in Frameworks */,
+				7714907C300A003200C0E2DD /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77FCF37A2D7360FF00E2C394 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77149078300A003200C0E2DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77149079300A003200C0E2DD /* ManagedSettings.framework */,
+				7714907B300A003200C0E2DD /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77FCF3742D7360FF00E2C394 = {
 			isa = PBXGroup;
 			children = (
 				77FCF37F2D7360FF00E2C394 /* addictshun */,
+				7714907D300A003200C0E2DD /* ShunBlock */,
+				77149078300A003200C0E2DD /* Frameworks */,
 				77FCF37E2D7360FF00E2C394 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				77FCF37D2D7360FF00E2C394 /* addictshun.app */,
+				77149077300A003200C0E2DD /* ShunBlock.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +120,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		77149076300A003200C0E2DD /* ShunBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77149086300A003200C0E2DD /* Build configuration list for PBXNativeTarget "ShunBlock" */;
+			buildPhases = (
+				77149073300A003200C0E2DD /* Sources */,
+				77149074300A003200C0E2DD /* Frameworks */,
+				77149075300A003200C0E2DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7714907D300A003200C0E2DD /* ShunBlock */,
+			);
+			name = ShunBlock;
+			packageProductDependencies = (
+			);
+			productName = ShunBlock;
+			productReference = 77149077300A003200C0E2DD /* ShunBlock.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		77FCF37C2D7360FF00E2C394 /* addictshun */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77FCF38B2D73610100E2C394 /* Build configuration list for PBXNativeTarget "addictshun" */;
@@ -55,10 +149,12 @@
 				77FCF3792D7360FF00E2C394 /* Sources */,
 				77FCF37A2D7360FF00E2C394 /* Frameworks */,
 				77FCF37B2D7360FF00E2C394 /* Resources */,
+				77149089300A003200C0E2DD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77149083300A003200C0E2DD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				77FCF37F2D7360FF00E2C394 /* addictshun */,
@@ -77,9 +173,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
+					77149076300A003200C0E2DD = {
+						CreatedOnToolsVersion = 26.6;
+					};
 					77FCF37C2D7360FF00E2C394 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -100,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				77FCF37C2D7360FF00E2C394 /* addictshun */,
+				77149076300A003200C0E2DD /* ShunBlock */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		77149075300A003200C0E2DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77FCF37B2D7360FF00E2C394 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +222,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		77149073300A003200C0E2DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77FCF3792D7360FF00E2C394 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +238,75 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		77149083300A003200C0E2DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77149076300A003200C0E2DD /* ShunBlock */;
+			targetProxy = 77149082300A003200C0E2DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		77149087300A003200C0E2DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShunBlock/ShunBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YK32DPS3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShunBlock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShunBlock;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaravgupta.addictshun.ShunBlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77149088300A003200C0E2DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShunBlock/ShunBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YK32DPS3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShunBlock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShunBlock;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaravgupta.addictshun.ShunBlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		77FCF3892D73610100E2C394 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,6 +497,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		77149086300A003200C0E2DD /* Build configuration list for PBXNativeTarget "ShunBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77149087300A003200C0E2DD /* Debug */,
+				77149088300A003200C0E2DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		77FCF3782D7360FF00E2C394 /* Build configuration list for PBXProject "addictshun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
